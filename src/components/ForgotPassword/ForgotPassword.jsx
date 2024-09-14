@@ -67,7 +67,7 @@ export default function ForgotPassword() {
         {myform.errors.email && myform.touched.email ? <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-200 dark:bg-gray-800 dark:text-red-400" role="alert">
           <span className="font-medium">{myform.errors.email}</span>
         </div> : null}
-        <button disabled={!(myform.isValid && myform.dirty)} type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send Code</button>
+        <button disabled={!(myform.isValid && myform.dirty)} type="submit" className= "mb-[396px] text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Send Code</button>
       </form>
       </div>
       <div className='verifyCode hidden'>
@@ -80,7 +80,7 @@ export default function ForgotPassword() {
         {myform2.errors.resetCode && myform2.touched.resetCode ? <div className="p-4 mb-4 text-sm text-red-800 rounded-lg bg-red-200 dark:bg-gray-800 dark:text-red-400" role="alert">
           <span className="font-medium">{myform2.errors.resetCode}</span>
         </div> : null}
-        <button disabled={!(myform2.isValid && myform2.dirty)} type="submit" className="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Reset Password</button>
+        <button disabled={!(myform2.isValid && myform2.dirty)} type="submit" className="mb-[396px] text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm w-full sm:w-auto px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Reset Password</button>
       </form>
       </div>
     </>
