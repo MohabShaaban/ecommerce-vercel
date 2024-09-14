@@ -16,7 +16,7 @@ export default function RecentProducts() {
   let {addProductToWishlist} = useContext(WishlistContext)
   let [Loading , SetLoading] = useState(false) 
   let [wishlistId , setWishlistId] = useState(null)
-  let {getWishlist} = useContext(WishlistContext)
+  let {getWishlist , wishlistItemsNo , setWishlistItemsNo} = useContext(WishlistContext)
 
 
   useEffect(() => {

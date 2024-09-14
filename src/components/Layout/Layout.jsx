@@ -14,7 +14,7 @@ export default function Layout() {
       <div className='container mx-auto py-10 my-10'>
         <Outlet></Outlet>
       </div>
-      {/* <Footer/> */}
+      <Footer/>
     </div>
   )
 }
