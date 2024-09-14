@@ -6,11 +6,13 @@ import logo from '../../assets/images/freshcart-logo.svg'
 import { NavLink, useNavigate } from 'react-router-dom'
 import { UserTokenContext } from '../../Context/UsetTokenContext'
 import { CartContext } from '../../Context/CartContext'
+import { WishlistContext } from '../../Context/WishlistContext'
 
 export default function Navbar() {
     let [count , setCount] = useState(0)
     let {token , setToken} = useContext(UserTokenContext)
     let {cartItemsNo} = useContext(CartContext)
+    let {wishlsitItemsNo} = useContext(WishlistContext)
     let navigate  = useNavigate()
     useEffect(()=> {}, [])
     function logout(){

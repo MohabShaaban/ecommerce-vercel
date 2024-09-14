@@ -34,7 +34,8 @@ function removeProductFromWishlist(id) {
 }
 
 export default function WishlistContextProvider({children}){
-    return <WishlistContext.Provider value={{addProductToWishlist , getWishlist , removeProductFromWishlist}}>
+    let [wishlistItemsNo , setWishlistItemsNo] = useState(null)
+    return <WishlistContext.Provider value={{addProductToWishlist , getWishlist , removeProductFromWishlist , wishlistItemsNo , setWishlistItemsNo}}>
         {children}
     </WishlistContext.Provider>
 }
